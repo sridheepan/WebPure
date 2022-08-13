@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Camperr. - Reserve Site</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <a href="/index.html">
+                        <img src="assets/logo.png" alt="Logo"  width="120">
+                     </a>
+                </div>
+                <li><a href="#">Reserve a site</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Deals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="reservation-container" id="reservation-container">
+            <p class="heading">Book Campsite</p>
+            <div class="site-information" id="site-information"></div>
+            <div class="guest-information">
+                <h4>2. Guest Details</h4>
+                <div class="nights-selector">
+                    <i class="bi bi-moon-stars-fill"></i> :
+                    <input type="number" class="input-field" id="booked_nights" min="1" placeholder="Enter Number of Nights">
+                    <span class="error-message" id="booked_nights_error">aksjdashdkas askdnas dkajsb</span>
+                </div>
+                <div>
+                    <i class="bi bi-person-circle"></i> :
+                    <input type="text" class="input-field" id="guest_name" placeholder="Enter Guest Name">
+                    <span class="error-message" id="guest_name_error">aksjdashdkas askdnas dkajsb</span>
+                </div>
+                <div>
+                    <i class="bi bi-envelope-fill"></i> :                    
+                    <input type="email" class="input-field" id="guest_email" placeholder="Enter Guest Email">
+                    <span class="error-message" id="guest_email_error">aksjdashdkas askdnas dkajsb</span>
+                </div>
+                <div class="reserve-btn-container">
+                    <button class="btn-round" id="reserve_campsite" >Reserve</button>
+                </div>
+            </div>
+        </div>
+        <div class="reservation-container" id="error-container">
+            <div class="guest-information">
+                <p>You must select a camp site before booking.</p>
+                <div class="go-home-btn-container">
+                    <button class="btn-round" onclick="goToHomepage()" >Go To Homepage</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/reserve.js"></script>
+</body>
+</html>
